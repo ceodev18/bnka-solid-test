@@ -1,0 +1,93 @@
+# Compiled python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# IDE files
+.idea/
+.vscode/
+
+# Database files
+*.db
+*.sqlite
+
+# Compiled bytecode
+*.pyc
+
+# Log files
+*.log
+
+# Configuration files
+*.ini
+
+# Flask configuration
+instance/
+.webassets-cache
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Flask-SQLAlchemy Migrate
+migrations/
+
+# Flask-WTF CSRF secret key
+.wtfcache
+
+# Environment variables file
+.env
+
+# Flask environment files
+.env.*
+
+# Docker Compose
+docker-compose.yml
+docker-compose.override.yml

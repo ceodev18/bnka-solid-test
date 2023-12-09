@@ -1,0 +1,1 @@
+# bnka-solid-test
