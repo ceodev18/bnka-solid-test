@@ -3,6 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flasgger import Swagger
 from app.models import db, User  # Adjust the import statement
+from flask_cors import CORS  # Import CORS
 
 
 
@@ -14,6 +15,7 @@ app.config['SWAGGER'] = {
     'uiversion': 3,
     'specs_route': '/swagger/',
 }
+CORS(app)
 
 swagger = Swagger(app)
 db.init_app(app)

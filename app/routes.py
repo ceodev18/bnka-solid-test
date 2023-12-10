@@ -31,6 +31,7 @@ def create_user():
         description: Bad request, missing parameters or duplicate username/email
     """
     data = request.form
+    
     new_user = User(username=data['username'], email=data['email'])
     db.session.add(new_user)
     db.session.commit()
