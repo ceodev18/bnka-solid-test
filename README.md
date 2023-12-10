@@ -51,3 +51,8 @@ Ejecutar react app
 Resultado de los tests
 
 ![Alt text](image.png)
+
+Para probar los endpoints a través de una interfaz, estoy usando Swagger
+y se puede ubicar en la ruta http://127.0.0.1:5000/swagger/#/
+
+![Alt text](image-1.png)
