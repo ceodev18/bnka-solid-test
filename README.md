@@ -37,8 +37,13 @@ Generar reportes en HTML
 Pasos para correr react project (abrir otra terminal del proyecto)
 ### `cd user-management-app`
 
+Crear archivo .env en la raiz del proyecto react y crear variable
+
+REACT_APP_BACKEND_API=http://127.0.0.1:5000
+
 Instalar dependencias
 ### `npm install`
+
 
 Ejecutar react app
 ### `npm run start`
