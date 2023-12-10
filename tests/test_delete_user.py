@@ -31,7 +31,7 @@ class DeleteUserTest(unittest.TestCase):
             db.session.commit()
 
             # Check if the user is created successfully
-            created_user = User.query.get(test_user.id)
+            created_user = db.session.get(User,test_user.id)
             self.assertEqual(created_user, test_user)
 
         # Send a DELETE request to delete the user
@@ -46,7 +46,7 @@ class DeleteUserTest(unittest.TestCase):
 
         # Check if the user is actually deleted from the database
         with self.app.app_context():
-            deleted_user = User.query.get(test_user.id)
+            deleted_user = db.session.get(User,test_user.id)
             self.assertIsNone(deleted_user)
 
     def test_delete_user_nonexistent(self):
